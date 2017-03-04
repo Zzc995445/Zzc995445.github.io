@@ -4,13 +4,15 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Happy Birthday</title>
   <link rel="stylesheet" href="css1/styless.css" media="screen" type="text/css" />
 </head>
 
 <body>
-
+$(window).bind('resize load', function(){
+$("body").css("zoom", $(window).width() / 640);
+$("body").css("display" , "block");
+}); 
 <div class="bg">
       <div class="velas">
         <div class="fuego"></div>
